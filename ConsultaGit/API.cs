@@ -13,6 +13,8 @@ namespace ConsultaGit
     {
         public static async Task<T> Consulta(string requestUri)
         {
+           // await Task.Delay(30000);
+
             using (var client = new HttpClient())
             {
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;

@@ -50,6 +50,8 @@
     <Compile Include="API.cs" />
     <Compile Include="Entidade\CommitDetalhes.cs" />
     <Compile Include="Entidade\CommitUsuario.cs" />
+    <Compile Include="Entidade\RepositorioDetalhe.cs" />
+    <Compile Include="Entidade\RepositorioForkDetalhe.cs" />
     <Compile Include="Entidade\Resultado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

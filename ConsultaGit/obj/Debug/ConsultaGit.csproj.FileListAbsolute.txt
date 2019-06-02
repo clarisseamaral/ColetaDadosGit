@@ -25,3 +25,14 @@ C:\Users\Clarisse.DESKTOP-LGHJ8Q7\Source\Repos\ColetaDadosGit\ConsultaGit\bin\De
 C:\Users\Clarisse.DESKTOP-LGHJ8Q7\Source\Repos\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.csprojResolveAssemblyReference.cache
 C:\Users\Clarisse.DESKTOP-LGHJ8Q7\Source\Repos\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.exe
 C:\Users\Clarisse.DESKTOP-LGHJ8Q7\Source\Repos\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.pdb
+C:\proj\ColetaDadosGit\ConsultaGit\bin\Debug\ConsultaGit.exe.config
+C:\proj\ColetaDadosGit\ConsultaGit\bin\Debug\ConsultaGit.exe
+C:\proj\ColetaDadosGit\ConsultaGit\bin\Debug\ConsultaGit.pdb
+C:\proj\ColetaDadosGit\ConsultaGit\bin\Debug\Newtonsoft.Json.dll
+C:\proj\ColetaDadosGit\ConsultaGit\bin\Debug\Newtonsoft.Json.pdb
+C:\proj\ColetaDadosGit\ConsultaGit\bin\Debug\Newtonsoft.Json.xml
+C:\proj\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.csprojAssemblyReference.cache
+C:\proj\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.csproj.CoreCompileInputs.cache
+C:\proj\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.csproj.CopyComplete
+C:\proj\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.exe
+C:\proj\ColetaDadosGit\ConsultaGit\obj\Debug\ConsultaGit.pdb

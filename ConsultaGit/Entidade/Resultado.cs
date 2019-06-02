@@ -28,6 +28,7 @@ namespace ConsultaGit
 
         public int Pagina { get; set; }
 
+        public string NomeRepositorio { get; set; }
 
     }
 }

@@ -17,5 +17,8 @@ namespace ConsultaGit
     {
         [DataMember(Name = "url")]
         public string Url { get; set; }
+
+        [DataMember(Name = "sha")]
+        public string Sha { get; set; }
     }
 }

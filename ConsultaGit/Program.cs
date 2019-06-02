@@ -10,15 +10,15 @@ namespace ConsultaGit
     {
         private static List<String> usuarios = new List<String>()
         {
-                //"bpasero",
-                //"joaomoreno",
-                //"jrieken",
-                //"isidorn",
-                //"alexandrudima",
-                //"mjbvz",
-                //"sandy081",
-                //"aeschli",
-                //"Tyriar",
+                "bpasero",
+                "joaomoreno",
+                "jrieken",
+                "isidorn",
+                "alexandrudima",
+                "mjbvz",
+                "sandy081",
+                "aeschli",
+                "Tyriar",
                 "roblourens",
                 "weinand",
                 "chrmarti",
@@ -60,93 +60,16 @@ namespace ConsultaGit
                     }
                 }
 
-                //GerarRelatorio();
+                Console.WriteLine("Concluido");
                 Console.ReadLine();
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
-
             }
         }
-
-        #region 
-
-        /*private static async void GerarRelatorio()
-        {
-            List<String> usuarios = new List<String>()
-            {
-                "bpasero",
-                "joaomoreno",
-                "jrieken",
-                "isidorn",
-                "alexandrudima",
-                "mjbvz",
-                "sandy081",
-                "aeschli",
-                "Tyriar",
-                "roblourens",
-                "weinand",
-                "chrmarti",
-                "rebornix",
-                "ramya-rao-a",
-                "dbaeumer",
-            };
-
-            foreach (var usuario in usuarios)
-            {
-                var lista = new List<Resultado>();
-
-                for (int i = 1; i < 35; i++)
-                {
-                    var urls = await API<CommitUsuario>.Consulta("search/commits?q=repo:Microsoft/vscode+author:" + usuario + "&page=" + i);
-
-                    Console.WriteLine("\t" + i + " " + usuario);
-
-                    if (urls.Items != null && urls.Items.Count > 0)
-                    {
-                        foreach (var item in urls.Items)
-                        {
-                            //int aguardar = 0;
-                            //do
-                            //{
-                            var requestUri = "" + item.Url.Replace("https://api.github.com/", "");
-                            var detalhes = await API<CommitDetalhes>.Consulta(requestUri);
-
-                            if (detalhes.Commit != null)
-                            {
-                                lista.Add(ObterResultado(detalhes, usuario, i));
-                                //aguardar = 0;
-                            }
-                            //else
-                            //{
-                            //    Console.Write("Falha request\t");
-                            //
-                            //    if (aguardar == 0)
-                            //        PreencherCsv(lista, usuario);
-                            //
-                            //    await Task.Delay(240000);
-                            //    Console.WriteLine("\tTask finalizada");
-                            //    aguardar = 1;
-                            //}
-
-                            //} while (aguardar == 1);
-
-                        }
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-
-                PreencherCsv(lista, usuario);
-            }
-
-            Console.WriteLine("Concluido.");
-        }*/
-        #endregion
 
         private static Resultado ObterResultado(CommitDetalhes detalhes, string usuario, string nomeRepositorio, int pagina)
         {
@@ -196,7 +119,7 @@ namespace ConsultaGit
                 {
                     linhas.Add(ObterLinhas(resultado));
                 }
-               // var name = string.Format("Relatorio_{0}", usuario);
+
                 var name = "RelatorioComCommit";
                 System.IO.File.AppendAllLines($"{name}.csv", linhas.ToArray(), Encoding.UTF8);
                 Console.WriteLine("Relatorio com os commits atualizado!");
@@ -220,7 +143,7 @@ namespace ConsultaGit
                     linhas.Add(string.Join(",", linha));
                 }
 
-                var name = "Relatorio_ModeloRepo";
+                var name = "RelatorioModeloRepo";
                 System.IO.File.AppendAllLines($"{name}.csv", linhas.ToArray(), Encoding.UTF8);
                 Console.WriteLine("Relatorio com repositorios atualizado!");
             }
